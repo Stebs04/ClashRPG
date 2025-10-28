@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dt8wcnrctgs1j"]
+[gd_scene load_steps=3 format=3 uid="uid://dt8wcnrctgs1j"]
 
 [ext_resource type="PackedScene" uid="uid://cgt2cffpcwp1p" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://7d0uix7nlv5o" path="res://Sprites/Backgrounds/ORS97Z0.jpg" id="1_vonw3"]
 
 [node name="Level" type="Node2D"]
 
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(0.309, 0.3)
+texture = ExtResource("1_vonw3")
+
 [node name="Player" parent="." instance=ExtResource("1_u52ul")]
-position = Vector2(537, 167)
+position = Vector2(-919, 193)
+scale = Vector2(3.8121095, 3.7941232)
